@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/imgSegundaActivity"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtConversorMoneda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/calculator" />
+
+    <TextView
+        android:id="@+id/txtConversorMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMonto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSegundaActivity"
+        tools:text="@string/txtConversor" />
+
+    <TextView
+        android:id="@+id/txtSeleccioneMoneda"
+        android:layout_width="169dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtSeleccion"
+        android:textAlignment="center"
+        android:textColor="@color/fuxia"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnDolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonto" />
+
+    <EditText
+        android:id="@+id/txtMonto"
+        android:layout_width="223dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/txtMonto"
+        android:inputType="numberDecimal"
+        android:textColorHint="#616161"
+        app:layout_constraintBottom_toTopOf="@+id/txtSeleccioneMoneda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConversorMoneda"
+        android:autofillHints="" />
+
+    <RadioButton
+        android:id="@+id/btnEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/euro"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnReal"
+        app:layout_constraintEnd_toStartOf="@+id/btnReal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDolar" />
+
+    <RadioButton
+        android:id="@+id/btnReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/real"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEuro" />
+
+    <RadioButton
+        android:id="@+id/btnDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="243dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/dolar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnEuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeleccioneMoneda" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnReinicar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReinicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/reiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnConvertir"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPersonName"
+        android:text="@string/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReal"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

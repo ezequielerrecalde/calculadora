@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calculadora</string>
+    <string name="sumar">AJOUTER</string>
+    <string name="restar">SOUSTRAIRE</string>
+    <string name="ocultar">CACHER</string>
+    <string name="reset">REDÉMARRER</string>
+    <string name="txtConversor">Convertisseur de devises</string>
+    <string name="txtMonto">Saisir un montant en ARS</string>
+    <string name="resultado">Résultat</string>
+    <string name="reiniciar">Redémarrer</string>
+    <string name="txtSeleccion">"Sélectionnez une devise "</string>
+</resources>

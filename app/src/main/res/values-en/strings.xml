@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="sumar">ADD</string>
+    <string name="restar">SUBTRACT</string>
+    <string name="ocultar">DISGUISE</string>
+    <string name="reset">RESTART</string>
+    <string name="txtConversor">Currency Converter</string>
+    <string name="txtMonto">Enter an amount in ARS</string>
+    <string name="txtSeleccion">"Select a currency "</string>
+    <string name="resultado">Outcome</string>
+    <string name="reiniciar">Restart</string>
+</resources>

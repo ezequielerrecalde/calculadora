@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">calculadora</string>
+    <string name="sumar">SUMAR</string>
+    <string name="restar">RESTAR</string>
+    <string name="zoommas" translatable="false">ZOOM +</string>
+    <string name="zoommen" translatable="false">ZOOM -</string>
+    <string name="ocultar">OCULTAR</string>
+    <string name="reset">REINICIAR</string>
+    <string name="txtConversor">Conversor Moneda</string>
+    <string name="txtMonto">Ingrese un monto en ARS</string>
+    <string name="txtSeleccion">Selecciones una moneda</string>
+    <string name="dolar" translatable="false">DOLAR USA</string>
+    <string name="euro" translatable="false">EURO</string>
+    <string name="real" translatable="false">REAL (BRASIL)</string>
+    <string name="resultado">Resultado</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="resulVisible" translatable="false"> 0 </string>
+    <string name="resulVisible2" translatable="false"> 0 </string>
+    <string name="_0" translatable="false">0</string>
+    <string name="convertir" translatable="false">CONVERTIR</string>
+    <string name="todo" translatable="false">TODO</string>
+
+</resources>
